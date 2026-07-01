@@ -1,0 +1,136 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  color: #203626;
+  background: #f3f8f1;
+}
+
+.site-header {
+  padding: 48px 20px;
+  text-align: center;
+  color: #ffffff;
+  background: linear-gradient(135deg, #2f6b3f, #6f9f4a);
+}
+
+.site-header h1 {
+  margin: 0 0 12px;
+  font-size: 2.5rem;
+}
+
+.site-header p {
+  max-width: 720px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+}
+
+.content {
+  width: min(920px, 100%);
+  margin: 0 auto;
+  padding: 32px 20px;
+}
+
+.intro,
+.card {
+  margin-bottom: 22px;
+  padding: 24px;
+  border: 1px solid #d8e6d1;
+  border-radius: 8px;
+  background: #ffffff;
+}
+
+h2 {
+  margin-top: 0;
+  color: #2f6b3f;
+}
+
+.link-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+.link-list a {
+  display: block;
+  min-height: 140px;
+  padding: 22px;
+  border: 1px solid #cfe0c7;
+  border-radius: 8px;
+  color: #203626;
+  text-decoration: none;
+  background: #ffffff;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.link-list a:hover,
+.link-list a:focus {
+  transform: translateY(-3px);
+  border-color: #6f9f4a;
+  box-shadow: 0 8px 22px rgba(32, 54, 38, 0.12);
+}
+
+.link-list span {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #2f6b3f;
+}
+
+.link-list small {
+  display: block;
+  color: #526856;
+}
+
+ul {
+  padding-left: 22px;
+}
+
+.back-link {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 12px 18px;
+  border-radius: 8px;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 700;
+  background: #2f6b3f;
+}
+
+.back-link:hover,
+.back-link:focus {
+  background: #245331;
+}
+
+.site-footer {
+  padding: 24px 20px;
+  text-align: center;
+  color: #526856;
+}
+
+.site-footer p {
+  margin: 0;
+}
+
+@media (max-width: 600px) {
+  .site-header {
+    padding: 36px 18px;
+  }
+
+  .site-header h1 {
+    font-size: 2rem;
+  }
+
+  .content {
+    padding: 24px 16px;
+  }
+
+  .intro,
+  .card {
+    padding: 20px;
+  }
+}
